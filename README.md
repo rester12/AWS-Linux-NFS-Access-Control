@@ -16,7 +16,6 @@ graph LR;
     C -->|NFS TCP 2049 over private VPC| E[EC2 Server 2 - NFS Client];
     E --> F[Client Mount];
 ```
-```
 
 ## Technologies Used
 
