@@ -9,12 +9,13 @@ This is a personal lab environment designed to practice cloud and Linux administ
 ## Architecture
 
 ```mermaid
-flowchart LR
-    Admin["Administrator using AWS CLI and SSH"] --> Server1["EC2 Server 1: NFS server"]
-    Server1 --> Shared["/srv/appdata/shared<br/>setgid and ACLs"]
-    Server1 --> Logs["/srv/appdata/logs<br/>auditor read access"]
-    Server2["EC2 Server 2: NFS client"] --> Mount["/mnt/appdata/shared"]
-    Shared <-->|"NFS port 2049<br/>private VPC traffic only"| Mount
+graph LR;
+    A[Administrator] --> B[EC2 Server 1 - NFS Server];
+    B --> C[Shared Directory - setgid and ACLs];
+    B --> D[Logs Directory - auditor read access];
+    C -->|NFS TCP 2049 over private VPC| E[EC2 Server 2 - NFS Client];
+    E --> F[Client Mount];
+```
 ```
 
 ## Technologies Used
