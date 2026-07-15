@@ -6,6 +6,12 @@ This hands-on portfolio lab demonstrates Linux identity and access administratio
 
 This is a personal lab environment designed to practice cloud and Linux administration concepts. It is not presented as a production deployment.
 
+## Medium Article
+
+Read the complete project walkthrough, implementation details, troubleshooting notes, and lessons learned:
+
+[Building Multi-User Linux Access Control and NFS Storage on AWS EC2](https://medium.com/@rester.mcglown/building-multi-user-linux-access-control-and-nfs-storage-on-aws-ec2-7646f27fad2c)
+
 ## Architecture
 
 ```mermaid
