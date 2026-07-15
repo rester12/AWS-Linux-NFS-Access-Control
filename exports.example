@@ -1,0 +1,4 @@
+# Replace the placeholder with the authorized NFS client's private IP.
+# Keep root_squash enabled unless a documented lab requirement proves otherwise.
+/srv/appdata/shared <client-private-ip>(rw,sync,root_squash,no_subtree_check)
+
